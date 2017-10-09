@@ -11,7 +11,6 @@ import App from './App.jsx';
 ReactDOM.render(<App />, document.getElementById('react-root'));
 */
 
-
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
@@ -22,8 +21,8 @@ import App from './components/App'
 let store = createStore(todoApp)
 
 render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
 )
