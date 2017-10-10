@@ -1,10 +1,16 @@
 let nextTodoId = 0
-export const addTodo = (text, img) => {
+export const addTodo = (text) => {
   return {
     type: 'ADD_TODO',
     id: nextTodoId++,
     text,
-    img
+  }
+}
+
+export const changeColor =  color => {
+  return {
+    type: 'CHANGE_COLOR',
+    color
   }
 }
 
