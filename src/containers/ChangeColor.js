@@ -34,13 +34,13 @@ class ChangeColor extends React.Component {
   }
 }
 
-function mapStateToProps(state, ownProps) {
+const mapStateToProps = (state, ownProps) => {
   return {
     color: state.color
   };
 }
 
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({changeColor: changeColor}, dispatch);
 }
 

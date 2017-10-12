@@ -1,5 +1,11 @@
 import React from 'react'
-import {PropTypes} from 'react'
+import PT from 'prop-types'
+
+const propTypes = {
+  active: PT.bool.isRequired,
+  children: PT.node.isRequired,
+  onClick: PT.func.isRequired
+}
 
 const Link = ({ active, children, onClick }) => {
   if (active) {
@@ -19,10 +25,6 @@ const Link = ({ active, children, onClick }) => {
   )
 }
 
-Link.propTypes = {
-  active: PropTypes.bool.isRequired,
-  children: PropTypes.node.isRequired,
-  onClick: PropTypes.func.isRequired
-}
+Link.propTypes = propTypes;
 
 export default Link
