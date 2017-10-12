@@ -7,3 +7,5 @@ A simple todo list with an added color changing title
 ![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=plastic)
 
 ![Github commits (since latest release)](https://img.shields.io/github/commits-since/10/05/project.svg)
+
+![code climate](http://img.shields.io/codeclimate/github/kabisaict/flow.svg)
